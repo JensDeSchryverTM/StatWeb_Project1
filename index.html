@@ -12,9 +12,10 @@
     <title>&lt;JensDeSchryver class="StudentDeveloper"&gt;</title>
 </head>
 
-<body style="margin: 0; background-color: #66806a;">
-
-    <aside style="background-color: #b4c6a6;">
+<body style="margin: 0; background-color: #b4c6a6;">
+    <!-- Dit is de header en navigatie die links van de pagina komt te staan +- 10% width-->
+    <aside
+        style="background-color: #b4c6a6; border-right: 1px solid #fff1af; width: 10%; position: fixed; margin: 0; padding: 0; height: 100%; overflow: auto;">
         <header>
             <a href="index.html"><img width="100" height="100" src="img/jens.png" alt="Afbeelding Jens"
                     style="border: 2px solid #ffc286; border-radius: 50%;"></a>
@@ -53,11 +54,13 @@
             </ul>
         </footer>
     </aside>
+    <!-- Hier komt de de volledige one page website in te staan +- 90% width -->
+    <div class="main" style="margin-left: 10%">
 
-    <div class="main">
+        <!-- About sectie -->
         <section id="about" style="background-color: #66806a; height: 100vh;">
             <div>
-                <p style="color: #fff1af;">&lt;html&gt;</p>
+                <p style="color: #fff1af; margin: 0;">&lt;html&gt;</p>
                 <p style="color: #fff1af;">&lt;body&gt;</p>
                 <p style="color: #fff1af;">&lt;h1&gt;</p>
                 <h1>Hi,
@@ -66,7 +69,7 @@
                     <br>
                     A <span style="text-decoration: #FFc286 wavy underline;">Pro</span>grammer
                 </h1>
-                <p style="color: #fff1af;">&lt;h1/&gt;</p>
+                <p style="color: #fff1af;">&lt;/h1&gt;</p>
             </div>
             <div
                 style="background-color: #b4c6a6; border-radius: 20px; width: fit-content; margin: 20px; padding: 20px;">
@@ -80,7 +83,7 @@
             <div>
                 <p style="color: #fff1af;">&lt;h2&gt;</p>
                 <h2>Here's a bit about me.</h2>
-                <p style="color: #fff1af;">&lt;h2/&gt;</p>
+                <p style="color: #fff1af;">&lt;/h2&gt;</p>
                 <p>I'm a 33 years old <strong>Student Developer</strong>. I have a strong
                     passion for technology overall, and <strong>Application
                         Development</strong> specifically.
@@ -98,10 +101,13 @@
 
         </section>
 
+        <!-- Interesses sectie  -->
         <section id="interesses" style="background-color: #b4c6a6; height: 100vh; text-align: center;">
             <p style="color: #fff1af; text-align: left;">&lt;section id=&quot;interest&quot;&gt;</p>
-            <h2>Interests</h2>
-
+            <h3>Get To Know</h3>
+            <p style="color: #fff1af;">&lt;h2&gt;</p>
+            <h2>MY INTERESTS</h2>
+            <p style="color: #fff1af;">&lt;/h2&gt;</p>
 
             <div
                 style="background-color: #66806a; border-radius: 20px; width: fit-content; margin: auto; padding: 20px;">
@@ -162,37 +168,48 @@
                 this has been shifted to a lower priority since my free time is not infinite and I also like to spend a
                 lot of time with my children. Now I&apos;m still trying to maintain it with a fitness device at my home.
             </p>
-
+            <p style="color: #fff1af; text-align: left;">&lt;/section&gt;</p>
         </section>
 
-        <section id="ervaringen" style="background-color: #66806a; height: 100vh;">
+        <!-- Ervaringen sectie -->
+        <section id="ervaringen" style="background-color: #66806a; height: 100vh; text-align: center;">
             <p style="color: #fff1af; text-align: left;">&lt;section id=&quot;skills&quot;&gt;</p>
-            <h2 style="text-align: center;">Skills &amp; Experience</h2>
+            <h3>Get To Know</h3>
+            <p style="color: #fff1af;">&lt;h2&gt;</p>
+            <h2>MY SKILLS &amp; EXPERIENCE</h2>
+            <p style="color: #fff1af;">&lt;/h2&gt;</p>
 
-            <div style="background-color: #b4c6a6; border-radius: 20px; width: 50%; margin: auto; padding: 20px;">
+            <div
+                style="background-color: #b4c6a6; border-radius: 20px; width: fit-content; margin: auto; padding: 20px;">
 
                 <table cellspacing="10">
                     <caption>Skills</caption>
                     <tr>
-                        <td><img src="img/html-5.svg" alt="HTML logo">HTML</td>
-                        <td>★★★</td>
+                        <td><img src="img/html-5.svg" alt="HTML logo"></td>
+                        <td><progress id="html" value="50" max="100" style="accent-color: #fff1af;
+                            "> 50% </progress></td>
                     </tr>
                     <tr>
-                        <td><img src="img/css3.svg" alt="CSS logo">CSS</td>
-                        <td>★★</td>
+                        <td><img src="img/css3.svg" alt="CSS logo"></td>
+                        <td><progress id="css" value="35" max="100" style="accent-color: #fff1af;
+                            "> 35% </progress></td>
                     </tr>
                     <tr>
-                        <td><img src="img/javascript.svg" alt="Javascript logo">Javascript</td>
-                        <td>★</td>
+                        <td><img src="img/javascript.svg" alt="Javascript logo"></td>
+                        <td><progress id="javascript" value="10" max="100" style="accent-color: #fff1af;
+                            "> 10% </progress></td>
                     </tr>
                     <tr>
-                        <td><img src="img/python.svg" alt="Python logo">Python</td>
-                        <td>★★★</td>
+                        <td><img src="img/c-sharp-logo.svg" alt="C scharp logo"></td>
+                        <td><progress id="c#" value="25" max="100" style="accent-color: #fff1af;
+                            "> 25% </progress></td>
                     </tr>
                     <tr>
-                        <td><img src="img/c-sharp-logo.svg" alt="C scharp logo">C#</td>
-                        <td>★★</td>
+                        <td><img src="img/python.svg" alt="Python logo"></td>
+                        <td><progress id="python" value="35" max="100" style="accent-color: #fff1af;
+                            "> 35% </progress></td>
                     </tr>
+
                 </table>
             </div>
 
@@ -272,7 +289,7 @@
                         <footer>
                             <p>This is a large pharmaceutical company. I was employed in the maintenance department.
                                 Here I
-                                was mainly responsible for general maintenance and mainly involved in carrying out
+                                was responsible for general maintenance and mainly involved in carrying out
                                 physical
                                 and chemical measurements of various departments.</p>
                         </footer>
@@ -280,24 +297,31 @@
                 </div>
 
             </div>
-
-
-
+            <p style="color: #fff1af; text-align: left;">&lt;/section&gt;</p>
         </section>
 
-        <section id="cv" style="background-color: #b4c6a6; height: 100vh;">
+        <!-- CV sectie -->
+        <section id="cv" style="background-color: #b4c6a6; height: 100vh; text-align: center;">
             <p style="color: #fff1af; text-align: left;">&lt;section id=&quot;CV&quot;&gt;</p>
-            <h2>Curriculum Vitae</h2>
+            <h3>Get To Know</h3>
+            <p style="color: #fff1af;">&lt;h2&gt;</p>
+            <h2>MY RESUME</h2>
+            <p style="color: #fff1af;">&lt;/h2&gt;</p>
 
+            <p style="color: #fff1af; text-align: left;">&lt;/section&gt;</p>
         </section>
 
+        <!-- Contact sectie -->
         <section id="contact" style="background-color: #66806a; height: 100vh; text-align: center;">
             <p style="color: #fff1af; text-align: left;">&lt;section id=&quot;contact&quot;&gt;</p>
             <h3>Get To Know</h3>
+            <p style="color: #fff1af;">&lt;h2&gt;</p>
             <h2>CONTACT ME</h2>
+            <p style="color: #fff1af;">&lt;/h2&gt;</p>
 
             <div style="background-color: #b4c6a6; border-radius: 20px; width: 50%; margin: auto; padding: 20px;">
-                <form action="https://tm-statweb.be/forms.php" method="get">
+                <p style="color: #fff1af;">&lt;form&gt;</p>
+                <form action="https://tm-statweb.be/sendmail.php" method="post">
                     <div>
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name">
@@ -319,10 +343,14 @@
                         <textarea id="message" name="message" placeholder="Your message"
                             style="height:200px"></textarea>
                     </div>
-                    <div>
-                        <input type="submit" value="Submit">
-                    </div>
+            </div>
+            <input type="hidden" name="email" value="r0909312@student.thomasmore.be">
+            <div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
                 </form>
+                <p style="color: #fff1af;">&lt;/form&gt;</p>
             </div>
 
             <div>
@@ -338,14 +366,15 @@
                 </ul>
             </div>
 
-
+            <p style="color: #fff1af; text-align: left;">&lt;/section&gt;</p>
         </section>
 
+        <!-- Footer -->
         <footer style="text-align: center;">
             <a href="#top">Back to top of page</a>
             <p> &copy; Jens De Schryver</p>
-            <p style="color: #fff1af; text-align: left;">&lt;body/&gt;</p>
-            <p style="color: #fff1af; text-align: left;">&lt;html/&gt;</p>
+            <p style="color: #fff1af; text-align: left;">&lt;/body&gt;</p>
+            <p style="color: #fff1af; text-align: left;">&lt;/html/&gt;</p>
         </footer>
 
     </div>
